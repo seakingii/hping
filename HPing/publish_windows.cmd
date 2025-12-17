@@ -1,0 +1,1 @@
+c:/dotnet9/dotnet publish   -c release -r win-x64  --self-contained=true -o z:\tools\hping

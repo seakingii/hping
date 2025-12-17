@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>true</PublishAot>
+        <AssemblyName>hping</AssemblyName>
+        <IsTrimmable>true</IsTrimmable>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommandLineParser" Version="2.9.1" />
+      <PackageReference Include="Terminal.Gui" Version="2.0.0-develop.4609" />
+        <TrimmerRootAssembly Include="Terminal.Gui" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Juyi.Math">
+        <HintPath>..\..\..\..\..\csharp_net9\outdll\net9.0\Juyi.Math.dll</HintPath>
+      </Reference>
+      <Reference Include="Juyi.OS">
+        <HintPath>..\..\..\..\..\csharp_net9\outdll\net9.0\Juyi.OS.dll</HintPath>
+      </Reference>
+      <Reference Include="Juyi.Types">
+        <HintPath>..\..\..\..\..\csharp_net9\outdll\net9.0\Juyi.Types.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
